@@ -112,7 +112,7 @@ console.log("Hola")
          var mensaje= "Ya duermete ";
      }
  
-     document.getElementById('saludo').innerHTML = fecha + nombre ;
+     document.getElementById('saludo').innerHTML = fecha + " " + nombre ;
      document.getElementById('mensaje').innerHTML = mensaje;
      
   });
