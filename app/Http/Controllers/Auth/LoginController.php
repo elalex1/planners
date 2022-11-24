@@ -74,7 +74,7 @@ class LoginController extends Controller
 
     $passwordEncrypted = $this->encryptValue($password);
 
-    //return $password;
+    //return $passwordEncrypted;
 
     $checkLogin = $this->LoginModel->getLogin($email, $passwordEncrypted);
 
@@ -105,6 +105,7 @@ class LoginController extends Controller
       $username = $userdata[0]['nombre_corto'];
 
       $rol = $userdata[0]['nombre'];
+      //return $rol;
 
       $username = substr($username, 0, strpos($username, '@uriel.hosting-mexico.net'));
 
@@ -123,8 +124,8 @@ class LoginController extends Controller
       \Session::put('rol',$rol);
 
 
-     $conexion = $this->ConnectUserDB($username,$clave);
-return $conexion;
+   //  $conexion = $this->ConnectUserDB($username,$clave);
+//return $conexion;
 
 
       $previous_url = \Session::get('previous_url');

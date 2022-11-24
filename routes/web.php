@@ -30,6 +30,10 @@ use App\Http\Controllers\Auth\LoginController;
 
 use App\Http\Controllers\RequisitionController;
 
+//=====================================================
+
+use App\Http\Controllers\Catalogos\EmpleadosController;
+
 /*######################################################################################################*/
 
 /****                                  CLEAR CACHE                                                   ****/
@@ -113,8 +117,11 @@ use App\Http\Controllers\RequisitionController;
   //Requisiciones
 
   Route::get('email/{id}', 'RequisitionController@EmailView')->name('email');
-
-Route::get('usess', [LoginController::class, 'Login'])->name('getcorreo');
+//======================================================================================
+Route::get('userempresa', [UserController::class, 'index'])->name('usuarioempresa');
+Route::get('usess', [LoginController::class, 'CrearUsuario'])->name('getcorreo');
+Route::get('empleadosasd', [LoginController::class, 'CrearUsuario'])->name('import.empleados');
+//=======================================================================================
 
   //Login
 
@@ -179,7 +186,7 @@ Route::post('/crearcontrasena{id}', [LoginController::class, 'CrearContraseña']
 
 
 
-  Route::group(['middleware' => ['CheckUser']], function(){
+  //Route::group(['middleware' => ['Auth']], function(){
 
 
 
@@ -869,7 +876,9 @@ Route::post('user', 'UserController@index')->name('user');
 
     ////////////////////////////////empleados
 
-    Route::get('empleado','Catalogos\EmpleadosController@index')->name('empleados');
+    
+    //Route::get('empleado','Catalogos\EmpleadosController@index')->name('empleados');
+    Route::get('empleado', [EmpleadosController::class, 'index'])->name('empleados');
 
     Route::post('empleado','Catalogos\EmpleadosController@empleadoStore')->name('empleados_store');
 
@@ -1049,11 +1058,7 @@ Route::post('user', 'UserController@index')->name('user');
 
 
 
-});
-
-
-
-//Route::get('/home', 'HomeController@index')->name('home');
+//;
 
 
 
