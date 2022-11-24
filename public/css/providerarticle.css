@@ -1,0 +1,11 @@
+ .edit-record-art, .assign-article  {
+     cursor: pointer;
+ }
+
+ .edit-record-art {
+     color: black;
+ }
+
+ .seleccionado {
+   background-color: #00968840 !important;
+ }

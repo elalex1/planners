@@ -1,0 +1,48 @@
+
+ #mdlArticlesApp {
+   max-height: 86%;
+   width: 94%;
+   top: 0%;
+   height: 100%
+ }
+
+#save-application{
+    float: right;
+    top: 16px;
+ }
+
+ #update-application{
+     float: right;
+     top: -16px;
+  }
+
+ #tableApplications td{
+     padding-top: 0px !important;
+     padding-right: 0px !important;
+     padding-bottom: 0px !important;
+ }
+
+ #mdl-iframe {
+   height: 100%;
+   transform: scaleX(1.2) scaleY(1.2) !important;
+ }
+
+ #mdl-iframe .modal-content{
+   padding: 8px;
+ }
+
+ #if-aplicacion, #modal-contenido {
+   height: 100%;
+   max-height: 100%;
+   width: 100%;
+ }
+
+ #tablePaseLista {
+   display: block;
+   overflow-x: auto;
+   overflow-y: auto;
+ }
+
+ .delete-record-app, .edit-record-app, .email-record-app, .view-record-app {
+     cursor: pointer;
+ }

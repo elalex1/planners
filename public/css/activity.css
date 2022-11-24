@@ -1,0 +1,43 @@
+
+ #mdlArticlesApp {
+   max-height: 86%;
+   width: 94%;
+   top: 0%;
+   height: 100%
+ }
+
+#save-activity{
+    float: right;
+    top: 16px;
+ }
+
+ #update-activity{
+     float: right;
+     top: -16px;
+  }
+
+ #tableActivities td{
+     padding-top: 0px !important;
+     padding-right: 0px !important;
+     padding-bottom: 0px !important;
+ }
+
+
+ #if-actividad, #modal-contenido {
+   height: 100%;
+   max-height: 100%;
+   width: 100%;
+ }
+
+ #tablePaseLista {
+   display: block;
+   overflow-x: auto;
+   overflow-y: auto;
+ }
+
+ .delete-record-act, .edit-record-act, .email-record-act, .view-record-act, .auth-record-act {
+     cursor: pointer;
+ }
+ .pdf-record-act, .img-record-act, .auth-record-act {
+     color: black;
+ }

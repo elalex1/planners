@@ -1,0 +1,692 @@
+[05-Sep-2022 12:38:38 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1789
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php(42): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/composer/ClassLoader.php(571): include('/home/renovati/...')
+#2 /home/renovati/kinder/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/helpers.php(423): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(80): collect()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(206): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\Foundation\Application->bootstrapWith()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\Foundation\Http\Kernel->bootstrap()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#10 /home/renovati/kinder/public/index.php(55): Illuminate\Foundation\Http\Kernel->handle()
+#11 {main} in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php on line 42
+[05-Sep-2022 12:39:21 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1789
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php(42): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/composer/ClassLoader.php(571): include('/home/renovati/...')
+#2 /home/renovati/kinder/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/helpers.php(423): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(80): collect()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(206): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\Foundation\Application->bootstrapWith()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\Foundation\Http\Kernel->bootstrap()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#10 /home/renovati/kinder/public/index.php(55): Illuminate\Foundation\Http\Kernel->handle()
+#11 {main} in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php on line 42
+[05-Sep-2022 12:39:36 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1789
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php(42): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/composer/ClassLoader.php(571): include('/home/renovati/...')
+#2 /home/renovati/kinder/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/helpers.php(423): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(80): collect()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(206): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\Foundation\Application->bootstrapWith()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\Foundation\Http\Kernel->bootstrap()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#10 /home/renovati/kinder/public/index.php(55): Illuminate\Foundation\Http\Kernel->handle()
+#11 {main} in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php on line 42
+[05-Sep-2022 12:40:22 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1789
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php(42): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/composer/ClassLoader.php(571): include('/home/renovati/...')
+#2 /home/renovati/kinder/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/helpers.php(423): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(80): collect()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(206): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\Foundation\Application->bootstrapWith()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\Foundation\Http\Kernel->bootstrap()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#10 /home/renovati/kinder/public/index.php(55): Illuminate\Foundation\Http\Kernel->handle()
+#11 {main} in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php on line 42
+[05-Sep-2022 12:41:01 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1789
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php(42): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/composer/ClassLoader.php(571): include('/home/renovati/...')
+#2 /home/renovati/kinder/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/helpers.php(423): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(80): collect()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(206): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\Foundation\Application->bootstrapWith()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\Foundation\Http\Kernel->bootstrap()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#10 /home/renovati/kinder/public/index.php(55): Illuminate\Foundation\Http\Kernel->handle()
+#11 {main} in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php on line 42
+[05-Sep-2022 12:41:16 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1789
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php(42): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/composer/ClassLoader.php(571): include('/home/renovati/...')
+#2 /home/renovati/kinder/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/helpers.php(423): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(80): collect()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(206): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\Foundation\Application->bootstrapWith()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\Foundation\Http\Kernel->bootstrap()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#10 /home/renovati/kinder/public/index.php(55): Illuminate\Foundation\Http\Kernel->handle()
+#11 {main} in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php on line 42
+[05-Sep-2022 12:41:22 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1789
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php(42): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/composer/ClassLoader.php(571): include('/home/renovati/...')
+#2 /home/renovati/kinder/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/helpers.php(423): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(80): collect()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(206): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\Foundation\Application->bootstrapWith()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\Foundation\Http\Kernel->bootstrap()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#10 /home/renovati/kinder/public/index.php(55): Illuminate\Foundation\Http\Kernel->handle()
+#11 {main} in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php on line 42
+[05-Sep-2022 12:41:24 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1789
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php(42): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/composer/ClassLoader.php(571): include('/home/renovati/...')
+#2 /home/renovati/kinder/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/helpers.php(423): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(80): collect()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(206): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\Foundation\Application->bootstrapWith()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\Foundation\Http\Kernel->bootstrap()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#10 /home/renovati/kinder/public/index.php(55): Illuminate\Foundation\Http\Kernel->handle()
+#11 {main} in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php on line 42
+[05-Sep-2022 12:41:25 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1789
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php(42): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/composer/ClassLoader.php(571): include('/home/renovati/...')
+#2 /home/renovati/kinder/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/helpers.php(423): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(80): collect()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(206): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\Foundation\Application->bootstrapWith()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\Foundation\Http\Kernel->bootstrap()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#10 /home/renovati/kinder/public/index.php(55): Illuminate\Foundation\Http\Kernel->handle()
+#11 {main} in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php on line 42
+[05-Sep-2022 12:55:23 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1789
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php(42): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/composer/ClassLoader.php(571): include('/home/renovati/...')
+#2 /home/renovati/kinder/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/helpers.php(423): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(80): collect()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(206): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\Foundation\Application->bootstrapWith()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\Foundation\Http\Kernel->bootstrap()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#10 /home/renovati/kinder/public/index.php(55): Illuminate\Foundation\Http\Kernel->handle()
+#11 {main} in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php on line 42
+[05-Sep-2022 12:56:11 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1789
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php(42): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/composer/ClassLoader.php(571): include('/home/renovati/...')
+#2 /home/renovati/kinder/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/helpers.php(423): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(80): collect()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(206): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\Foundation\Application->bootstrapWith()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\Foundation\Http\Kernel->bootstrap()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#10 /home/renovati/kinder/public/index.php(55): Illuminate\Foundation\Http\Kernel->handle()
+#11 {main} in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php on line 42
+[05-Sep-2022 12:57:48 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1789
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php(42): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/composer/ClassLoader.php(571): include('/home/renovati/...')
+#2 /home/renovati/kinder/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/helpers.php(423): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(80): collect()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(206): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\Foundation\Application->bootstrapWith()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\Foundation\Http\Kernel->bootstrap()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#10 /home/renovati/kinder/public/index.php(55): Illuminate\Foundation\Http\Kernel->handle()
+#11 {main} in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Collection.php on line 42
+[05-Sep-2022 07:59:58 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[05-Sep-2022 08:00:24 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[05-Sep-2022 08:03:00 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[05-Sep-2022 08:05:30 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[05-Sep-2022 08:05:40 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[05-Sep-2022 08:05:45 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[05-Sep-2022 08:10:41 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[05-Sep-2022 08:13:56 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[05-Sep-2022 08:14:00 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[05-Sep-2022 08:14:01 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[05-Sep-2022 08:14:02 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[05-Sep-2022 08:14:03 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[03-Oct-2022 17:57:55 UTC] PHP Fatal error:  Trait 'Illuminate\Database\Eloquent\Factories\HasFactory' not found in /home/renovati/kinder/app/Models/UsuariosModel.php on line 10
+[26-Oct-2022 09:10:41 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'ComposerAutoloaderInit23220c4cbe6285b3a63dd3b553142289' not found in /home/renovati/kinder/vendor/autoload.php:7
+Stack trace:
+#0 /home/renovati/kinder/public/index.php(24): require()
+#1 {main}
+  thrown in /home/renovati/kinder/vendor/autoload.php on line 7
+[26-Oct-2022 09:10:47 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class 'ComposerAutoloaderInit23220c4cbe6285b3a63dd3b553142289' not found in /home/renovati/kinder/vendor/autoload.php:7
+Stack trace:
+#0 /home/renovati/kinder/public/index.php(24): require()
+#1 {main}
+  thrown in /home/renovati/kinder/vendor/autoload.php on line 7
+[04-Nov-2022 12:11:00 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[05-Nov-2022 10:40:03 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[07-Nov-2022 08:05:18 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[07-Nov-2022 08:42:51 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[07-Nov-2022 09:05:56 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[07-Nov-2022 09:06:18 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[07-Nov-2022 09:06:21 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[07-Nov-2022 09:06:39 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[07-Nov-2022 15:21:27 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php:826
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(826): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(795): Illuminate\Container\Container->resolveDependencies()
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(764): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#10 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 826
+[07-Nov-2022 09:21:50 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[07-Nov-2022 15:30:38 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php:826
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(826): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(795): Illuminate\Container\Container->resolveDependencies()
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(764): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#10 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 826
+[07-Nov-2022 15:30:48 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php:826
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(826): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(795): Illuminate\Container\Container->resolveDependencies()
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(764): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#10 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 826
+[07-Nov-2022 09:31:05 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[07-Nov-2022 09:33:13 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[07-Nov-2022 09:33:16 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[07-Nov-2022 09:33:36 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[07-Nov-2022 09:34:16 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[07-Nov-2022 15:34:28 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php:826
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(826): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(795): Illuminate\Container\Container->resolveDependencies()
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(764): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#10 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 826
+[07-Nov-2022 09:35:02 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[07-Nov-2022 09:35:07 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[07-Nov-2022 09:42:53 America/Mexico_City] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.2.5". You are running 7.1.33. in /home/renovati/kinder/vendor/composer/platform_check.php on line 24
+[07-Nov-2022 09:43:30 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[07-Nov-2022 09:43:38 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[07-Nov-2022 09:46:04 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[07-Nov-2022 09:46:10 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[07-Nov-2022 09:47:35 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[07-Nov-2022 11:28:32 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[07-Nov-2022 11:31:37 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[07-Nov-2022 11:52:57 America/Mexico_City] PHP Notice:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[07-Nov-2022 11:52:57 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[07-Nov-2022 11:54:00 America/Mexico_City] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.2.5". You are running 7.1.33. in /home/renovati/kinder/vendor/composer/platform_check.php on line 24
+[07-Nov-2022 12:18:57 America/Mexico_City] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.2.5". You are running 7.1.33. in /home/renovati/kinder/vendor/composer/platform_check.php on line 24
+[07-Nov-2022 13:01:37 America/Mexico_City] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.2.5". You are running 7.1.33. in /home/renovati/kinder/vendor/composer/platform_check.php on line 24
+[07-Nov-2022 13:02:23 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[07-Nov-2022 13:02:56 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[07-Nov-2022 13:03:35 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[07-Nov-2022 13:03:38 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[07-Nov-2022 13:03:41 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[09-Nov-2022 08:18:12 America/Mexico_City] PHP Fatal error:  Uncaught RuntimeException: PHP's json extension is required to use Monolog's NormalizerFormatter in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:38
+Stack trace:
+#0 /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php(44): Monolog\Formatter\NormalizerFormatter->__construct(NULL)
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(386): Monolog\Formatter\LineFormatter->__construct(NULL, NULL, true, true)
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(371): Illuminate\Log\LogManager->formatter()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(355): Illuminate\Log\LogManager->prepareHandler(Object(Monolog\Handler\StreamHandler))
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(164): Illuminate\Log\LogManager->prepareHandlers(Array)
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Log in /home/renovati/kinder/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 38
+[09-Nov-2022 08:30:02 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[09-Nov-2022 08:38:45 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[09-Nov-2022 08:50:33 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[09-Nov-2022 09:04:31 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[09-Nov-2022 09:05:07 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[09-Nov-2022 15:05:13 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php:826
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(826): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(795): Illuminate\Container\Container->resolveDependencies()
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(764): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#10 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 826
+[09-Nov-2022 09:06:43 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[09-Nov-2022 09:07:13 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[09-Nov-2022 15:07:39 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php:826
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(826): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(795): Illuminate\Container\Container->resolveDependencies()
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(764): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#10 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 826
+[09-Nov-2022 15:08:00 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php:826
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(826): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(795): Illuminate\Container\Container->resolveDependencies()
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(764): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#10 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 826
+[09-Nov-2022 15:08:28 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php:826
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(826): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(795): Illuminate\Container\Container->resolveDependencies()
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(764): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#10 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 826
+[09-Nov-2022 15:09:37 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php:826
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(826): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(795): Illuminate\Container\Container->resolveDependencies()
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(764): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#10 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 826
+[09-Nov-2022 15:09:51 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php:826
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(826): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(795): Illuminate\Container\Container->resolveDependencies()
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(764): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#10 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 826
+[09-Nov-2022 09:09:57 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[09-Nov-2022 09:10:38 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[09-Nov-2022 15:14:32 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php:826
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(826): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(795): Illuminate\Container\Container->resolveDependencies()
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(764): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#10 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 826
+[09-Nov-2022 09:15:07 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[09-Nov-2022 15:15:38 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php:826
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(826): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(795): Illuminate\Container\Container->resolveDependencies()
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(764): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#10 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 826
+[09-Nov-2022 09:24:31 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[09-Nov-2022 09:25:04 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[09-Nov-2022 15:25:36 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php:826
+Stack trace:
+#0 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(826): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(795): Illuminate\Container\Container->resolveDependencies()
+#2 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#3 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#4 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#5 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(764): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(646): Illuminate\Container\Container->build()
+#8 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php(601): Illuminate\Container\Container->resolve()
+#9 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(734): Illuminate\Container\Container->make()
+#10 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 826
+[09-Nov-2022 09:25:55 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[09-Nov-2022 09:27:16 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[09-Nov-2022 09:52:53 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[09-Nov-2022 09:53:20 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[09-Nov-2022 09:54:00 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[09-Nov-2022 09:54:01 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[09-Nov-2022 09:54:02 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[09-Nov-2022 10:03:21 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[09-Nov-2022 12:38:23 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[09-Nov-2022 12:43:57 America/Mexico_City] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Illuminate\Foundation\Http\Kernel::handle(), 0 passed in /home/renovati/kinder/public/index.php on line 107 and exactly 1 expected in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:111
+Stack trace:
+#0 /home/renovati/kinder/public/index.php(107): Illuminate\Foundation\Http\Kernel->handle()
+#1 {main}
+  thrown in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php on line 111
+[09-Nov-2022 12:44:43 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[09-Nov-2022 13:01:11 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
+[10-Nov-2022 08:09:57 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/renovati/kinder/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 161
