@@ -26,6 +26,8 @@ use PhpParser\Node\Stmt\Return_;
 
 use App\Http\Controllers\UploadController;
 
+use Rap2hpoutre\FastExcel\FastExcel;
+
 
 
 class EmpleadosController extends Controller
@@ -819,24 +821,18 @@ class EmpleadosController extends Controller
 
 public function ImportEmpleados(Request $request){
 
-    $empleados = (new UploadController)->Archivo($request); //Llamo la funcion para convertir el archivo
+    $users = (new FastExcel)->import('file.xlsx', function ($line) {
+        return User::create([
+            'name' => $line['Name'],
+            'email' => $line['Email']  //Pendiente por aqui xd
+        ]);
+    });
 
-    //Insertamos
-    foreach($empleados as $importData){
+    }
 
-        $insertData = array(
-           "nombre"=>$importData[0],
-           "rfc"=>$importData[1],
-           "usuario_creacion"=>$importData[2],                  //Esta es la parte Dinamica de la funcion, va a variar dependiendo de que se desee insertar
-           "usuario_modificacion"=>$importData[3],
-           "estatus"=>$importData[4]);
-          
-           EmpleadoModel::insertData($insertData);
-
-        return redirect()->back();
-
-
-
+    public function ExportEmpleados(){
+        $users = CatalogoModel::all();
+        return (new FastExcel(CatalogoModel::all()))->download('file.xlsx');
+        
+    }
 }
-
-}}

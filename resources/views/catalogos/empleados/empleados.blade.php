@@ -4,11 +4,21 @@
 
 @section('content')
 
-<form method='post' action=' {{route('import.empleados')}} ' enctype='multipart/form-data' >
-    {{ csrf_field() }}
-    <input type='file' name='file'>
-    <input type='submit' name='submit' value='Import'>
-  </form>
+{{--Importar Y exportar Empleados--}}
+<div class="card row">
+    <div class="card-content">
+        <div class="row">
+            <div class="col s6">
+                <a class="waves-effect waves-light btn" href=" {{route('ImportEmpleados')}} ">Importar</a>
+            </div>
+            <div class="col s6">
+                <a class="waves-effect waves-light btn" href=" {{route('ExportEmpleados')}} ">Exportar</a>
+            </div>
+        </div>
+    </div>
+</div>
+{{--Lista de empleados etc xd--}}
+  
 
     <div class="card">
 

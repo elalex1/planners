@@ -12,7 +12,11 @@ use Illuminate\Support\Facades\Mail;
 use PDF;
 
 class CatalogoModel extends Model
+
 {
+
+    protected $table = "empleados";
+    
     public function getArticulos()
 	{
         $qry = 'SELECT';

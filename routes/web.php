@@ -120,7 +120,7 @@ use App\Http\Controllers\Catalogos\EmpleadosController;
 //======================================================================================
 Route::get('userempresa', [UserController::class, 'index'])->name('usuarioempresa');
 Route::get('usess', [LoginController::class, 'CrearUsuario'])->name('getcorreo');
-Route::get('empleadosasd', [LoginController::class, 'CrearUsuario'])->name('import.empleados');
+
 //=======================================================================================
 
   //Login
@@ -140,6 +140,8 @@ Route::get('/reenviarcorreo{id}', [LoginController::class, 'ReenviarCorreo'])->n
 Route::get('/reenviarcorreo', [LoginController::class, 'r'])->name('r');
 Route::get('/correoconfirmacion{id}', [LoginController::class, 'ConfirmarCorreo'])->name('ConfirmarCorreo');
 Route::post('/crearcontrasena{id}', [LoginController::class, 'CrearContraseña'])->name('crearcontrasena');
+Route::get('ExportEmpleados', [EmpleadosController::class, 'ExportEmpleados'])->name('ExportEmpleados');
+Route::post('ImportEmpleados', [EmpleadosController::class, 'ImportEmpleados'])->name('ImportEmpleados');
 //=================================================================================================================================
 
   Route::get('/', function () {
