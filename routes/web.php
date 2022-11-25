@@ -33,6 +33,7 @@ use App\Http\Controllers\RequisitionController;
 //=====================================================
 
 use App\Http\Controllers\Catalogos\EmpleadosController;
+use App\Http\Controllers\Catalogos\ClientesController;
 
 /*######################################################################################################*/
 
@@ -142,7 +143,16 @@ Route::get('/correoconfirmacion{id}', [LoginController::class, 'ConfirmarCorreo'
 Route::post('/crearcontrasena{id}', [LoginController::class, 'CrearContraseña'])->name('crearcontrasena');
 Route::get('ExportEmpleados', [EmpleadosController::class, 'ExportEmpleados'])->name('ExportEmpleados');
 Route::post('ImportEmpleados', [EmpleadosController::class, 'ImportEmpleados'])->name('ImportEmpleados');
+Route::get('clientes', [ClientesController::class, 'index'])->name('Clientes');
 //=================================================================================================================================
+
+//=======================================================================//
+//                        Clientes                                       //
+//=======================================================================//
+
+Route::get('clientes', [ClientesController::class, 'index'])->name('Clientes');
+Route::get('exportClientes', [ClientesController::class, 'ExportClientes'])->name('ExportClientes');
+Route::post('importClientes', [ClientesController::class, 'ImportClientes'])->name('ImportClientes');
 
   Route::get('/', function () {
 
