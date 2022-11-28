@@ -31,8 +31,6 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\RequisitionController;
 
 //=====================================================
-
-use App\Http\Controllers\Catalogos\EmpleadosController;
 use App\Http\Controllers\Catalogos\ClientesController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\InventoryController;
@@ -43,8 +41,15 @@ use App\Http\Controllers\Compras\RecepcionController;
 use App\Http\Controllers\Compras\DevRecepcionesController;
 use App\Http\Controllers\Compras\ComprasController;
 use App\Http\Controllers\Compras\DevComprasController;
-//=========================================================
-
+//catalogos================================================
+use App\Http\Controllers\Catalogos\EmpleadosController;
+use App\Http\Controllers\Catalogos\ConceptosNominaController;
+use App\Http\Controllers\Catalogos\TablasAntiguedadesController;
+use App\Http\Controllers\Catalogos\RegistrosPatronalesController;
+use App\Http\Controllers\Catalogos\TiposContratosController;
+use App\Http\Controllers\Catalogos\FrecuenciasNominasController;
+use App\Http\Controllers\Catalogos\DepartamentosController;
+use App\Http\Controllers\Catalogos\PuestosController;
 /*######################################################################################################*/
 
 /****                                  CLEAR CACHE                                                   ****/
@@ -899,95 +904,95 @@ Route::post('user', 'UserController@index')->name('user');
     //Route::get('empleado','Catalogos\EmpleadosController@index')->name('empleados');
     Route::get('empleado', [EmpleadosController::class, 'index'])->name('empleados');
 
-    Route::post('empleado','Catalogos\EmpleadosController@empleadoStore')->name('empleados_store');
+    Route::post('empleado',[EmpleadosController::class,'empleadoStore'])->name('empleados_store');
 
-    Route::get('empleado/all','Catalogos\EmpleadosController@getAll')->name('empleados_all');
+    Route::get('empleado/all',[EmpleadosController::class,'getAll'])->name('empleados_all');
 
-    Route::get('empleado/edit/{id}','Catalogos\EmpleadosController@empleadoEdit')->name('empleados_edit');
+    Route::get('empleado/edit/{id}',[EmpleadosController::class,'empleadoEdit'])->name('empleados_edit');
 
-    Route::post('empleado/edit/{id}','Catalogos\EmpleadosController@empleadoUpdate')->name('empleados_update');
+    Route::post('empleado/edit/{id}',[EmpleadosController::class,'empleadoUpdate'])->name('empleados_update');
 
-    Route::put('empleado/edit/{id}','Catalogos\EmpleadosController@empleadoUpdateSC')->name('empleados_update2');
+    Route::put('empleado/edit/{id}',[EmpleadosController::class,'empleadoUpdateSC'])->name('empleados_update2');
 
-    Route::post('empleado/nuevocontrato','Catalogos\EmpleadosController@empleadoNewContract')->name('empleados_nuevocontrato');
+    Route::post('empleado/nuevocontrato',[EmpleadosController::class,'empleadoNewContract'])->name('empleados_nuevocontrato');
 
-    Route::get('empleado/validartipocontrato/{parameter?}','Catalogos\EmpleadosController@validarTipocontrato')->name('empleados_validartipocontrato');
+    Route::get('empleado/validartipocontrato/{parameter?}',[EmpleadosController::class,'validarTipocontrato'])->name('empleados_validartipocontrato');
 
-    Route::post('empleado/cancelar_contrato','Catalogos\EmpleadosController@cancelarContratoEmpleado')->name('empleados_cancelar_contrato');
+    Route::post('empleado/cancelar_contrato',[EmpleadosController::class,'cancelarContratoEmpleado'])->name('empleados_cancelar_contrato');
 
-    Route::post('empleado/suspender_contrato','Catalogos\EmpleadosController@suspenderContratoEmpleado')->name('empleados_suspender_contrato');
+    Route::post('empleado/suspender_contrato',[EmpleadosController::class,'suspenderContratoEmpleado'])->name('empleados_suspender_contrato');
 
-    Route::post('empleado/aplicar_contrato','Catalogos\EmpleadosController@aplicarContratoEmpleado')->name('empleados_aplicar_contrato');
+    Route::post('empleado/aplicar_contrato',[EmpleadosController::class,'aplicarContratoEmpleado'])->name('empleados_aplicar_contrato');
 
-    Route::post('empleado/agregar_conceptos','Catalogos\EmpleadosController@agregarConceptosContratoEmpleado')->name('empleados_agrega_concepto_contrato');
+    Route::post('empleado/agregar_conceptos',[EmpleadosController::class,'agregarConceptosContratoEmpleado'])->name('empleados_agrega_concepto_contrato');
 
-    Route::post('empleado/quitar_conceptos','Catalogos\EmpleadosController@quitarConceptoContratoEmpleado')->name('empleados_quitar_concepto_contrato');
+    Route::post('empleado/quitar_conceptos',[EmpleadosController::class,'quitarConceptoContratoEmpleado'])->name('empleados_quitar_concepto_contrato');
 
     ////////////////////////////////////conceptos nomina
 
-    Route::get('conceptosnomina','Catalogos\ConceptosNominaController@index')->name('conceptos_nomina');
+    Route::get('conceptosnomina',[ConceptosNominaController::class,'index'])->name('conceptos_nomina');
 
-    Route::post('conceptosnomina','Catalogos\ConceptosNominaController@conceptoNominaStore')->name('conceptos_nomina_store');
+    Route::post('conceptosnomina',[ConceptosNominaController::class,'conceptoNominaStore'])->name('conceptos_nomina_store');
 
-    Route::get('conceptosnomina/edit/{id}','Catalogos\ConceptosNominaController@conceptoNominaEditar')->name('conceptos_nomina_edit');
+    Route::get('conceptosnomina/edit/{id}',[ConceptosNominaController::class,'conceptoNominaEditar'])->name('conceptos_nomina_edit');
 
-    Route::post('conceptosnomina/edit/{id}','Catalogos\ConceptosNominaController@conceptoNominaUpdate')->name('conceptos_nomina_update');
+    Route::post('conceptosnomina/edit/{id}',[ConceptosNominaController::class,'conceptoNominaUpdate'])->name('conceptos_nomina_update');
 
-    Route::get('conceptosnomina/gettipos/{parameter?}','Catalogos\ConceptosNominaController@getTiposConceptosSat')->name('conceptos_nomina_getTipos');
+    Route::get('conceptosnomina/gettipos/{parameter?}',[ConceptosNominaController::class,'getTiposConceptosSat'])->name('conceptos_nomina_getTipos');
 
         ////////////////////////////////////tablas antiguedades
 
-    Route::get('tablasantiguedades','Catalogos\TablasAntiguedadesController@index')->name('tablas_antiguedades');
+    Route::get('tablasantiguedades',[TablasAntiguedadesController::class,'index'])->name('tablas_antiguedades');
 
-    Route::post('tablasantiguedades','Catalogos\TablasAntiguedadesController@TablaAntiguedadStore')->name('tablas_antiguedades_store');
+    Route::post('tablasantiguedades',[TablasAntiguedadesController::class,'TablaAntiguedadStore'])->name('tablas_antiguedades_store');
 
-    Route::get('tablasantiguedades/edit/{id}','Catalogos\TablasAntiguedadesController@TablaAntiguedadEditar')->name('tablas_antiguedades_edit');
+    Route::get('tablasantiguedades/edit/{id}',[TablasAntiguedadesController::class,'TablaAntiguedadEditar'])->name('tablas_antiguedades_edit');
 
-    Route::post('tablasantiguedades/agregarrenglon','Catalogos\TablasAntiguedadesController@TablaAntiguedadAddRow')->name('tablas_antiguedades_adddet');
+    Route::post('tablasantiguedades/agregarrenglon',[TablasAntiguedadesController::class,'TablaAntiguedadAddRow'])->name('tablas_antiguedades_adddet');
 
-    Route::post('tablasantiguedades/eliminarrenglon','Catalogos\TablasAntiguedadesController@TablaAntiguedadDeleteRow')->name('tablas_antiguedades_deletedet');
+    Route::post('tablasantiguedades/eliminarrenglon',[TablasAntiguedadesController::class,'TablaAntiguedadDeleteRow'])->name('tablas_antiguedades_deletedet');
 
         ////////////////////////////////////registros patronales
 
-    Route::get('registrospatronales','Catalogos\RegistrosPatronalesController@index')->name('registrospatronales');
+    Route::get('registrospatronales',[RegistrosPatronalesController::class,'index'])->name('registrospatronales');
 
-    Route::post('registrospatronales','Catalogos\RegistrosPatronalesController@RegistroPatronalStore')->name('registrospatronales_store');
+    Route::post('registrospatronales',[RegistrosPatronalesController::class,'RegistroPatronalStore'])->name('registrospatronales_store');
 
-    Route::get('registrospatronales/edit/{id}','Catalogos\RegistrosPatronalesController@RegistroPatronalEdit')->name('registrospatronales_edit');
+    Route::get('registrospatronales/edit/{id}',[RegistrosPatronalesController::class,'RegistroPatronalEdit'])->name('registrospatronales_edit');
 
-    Route::post('registrospatronales/addriesgo','Catalogos\RegistrosPatronalesController@RegistroPatronalAddRiesgo')->name('registrospatronales_addRiesgo');
+    Route::post('registrospatronales/addriesgo',[RegistrosPatronalesController::class,'RegistroPatronalAddRiesgo'])->name('registrospatronales_addRiesgo');
 
-    Route::post('registrospatronales/deleteriesgo','Catalogos\RegistrosPatronalesController@RegistroPatronalDeleteRiesgo')->name('registrospatronales_deleteRiesgo');
+    Route::post('registrospatronales/deleteriesgo',[RegistrosPatronalesController::class,'RegistroPatronalDeleteRiesgo'])->name('registrospatronales_deleteRiesgo');
 
         ////////////////////////////////////tipos contratos
 
-    Route::get('tiposcontratos','Catalogos\TiposContratosController@index')->name('tiposcontratos');
+    Route::get('tiposcontratos',[TiposContratosController::class,'index'])->name('tiposcontratos');
 
-    Route::post('tiposcontratos','Catalogos\TiposContratosController@TipoContratoStore')->name('tiposcontratos_store');
+    Route::post('tiposcontratos',[TiposContratosController::class,'TipoContratoStore'])->name('tiposcontratos_store');
 
-    Route::post('tiposcontratos/actualizar','Catalogos\TiposContratosController@TipoContratoUpdate')->name('tiposcontratos_update');
+    Route::post('tiposcontratos/actualizar',[TiposContratosController::class,'TipoContratoUpdate'])->name('tiposcontratos_update');
 
         ////////////////////////////////////frecuencias nominas
 
-    Route::get('frecuenciasnominas','Catalogos\FrecuenciasNominasController@index')->name('frecuenciasnominas');
+    Route::get('frecuenciasnominas',[FrecuenciasNominasController::class,'index'])->name('frecuenciasnominas');
 
-    Route::post('frecuenciasnominas','Catalogos\FrecuenciasNominasController@FrecuenciaNominaStore')->name('frecuenciasnominas_store');
+    Route::post('frecuenciasnominas',[FrecuenciasNominasController::class,'FrecuenciaNominaStore'])->name('frecuenciasnominas_store');
 
-    Route::get('frecuenciasnominas/edit/{id}','Catalogos\FrecuenciasNominasController@FrecuenciaNominaStoreGetData')->name('frecuenciasnominas_edit');
+    Route::get('frecuenciasnominas/edit/{id}',[FrecuenciasNominasController::class,'FrecuenciaNominaStoreGetData'])->name('frecuenciasnominas_edit');
 
         ////////////////////////////////////Departamentos
 
-    Route::get('deperatmentos','Catalogos\DepartamentosController@index')->name('deperatmentos');
+    Route::get('deperatmentos',[DepartamentosController::class,'index'])->name('deperatmentos');
 
-    Route::post('deperatmentos','Catalogos\DepartamentosController@DepartamentosStore')->name('deperatmentos_store');
+    Route::post('deperatmentos',[DepartamentosController::class,'DepartamentosStore'])->name('deperatmentos_store');
 
     // Route::get('deperatmentos/edit/{id}','Catalogos\DepartamentosController@DepartamentosEdit')->name('deperatmentos_editar');
 
         ////////////////////////////////////puestos
 
-    Route::get('puestos','Catalogos\PuestosController@index')->name('puestos');
+    Route::get('puestos',[PuestosController::class,'index'])->name('puestos');
 
-    Route::post('puestos','Catalogos\PuestosController@PuestoStore')->name('puestos_store');
+    Route::post('puestos',[PuestosController::class,'PuestoStore'])->name('puestos_store');
 
     //Route::post('conceptosnomina','Catalogos\ConceptosNominaController@conceptoNominaStore')->name('conceptos_nomina_store');
 
