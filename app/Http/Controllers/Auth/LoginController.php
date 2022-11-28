@@ -160,11 +160,8 @@ class LoginController extends Controller
 
       // ->withErrors(['password' => 'Estas credenciales no coinciden en nuestros registros']);
 
-      return back()
-
-      ->withInput()
-
-      ->withErrors($checkLogin);
+      return redirect()->withErrors($checkLogin)->withInput();
+     
 
     }
 

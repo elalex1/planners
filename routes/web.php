@@ -34,6 +34,7 @@ use App\Http\Controllers\RequisitionController;
 
 use App\Http\Controllers\Catalogos\EmpleadosController;
 use App\Http\Controllers\Catalogos\ClientesController;
+use App\Http\Controllers\UserController;
 
 /*######################################################################################################*/
 
@@ -178,8 +179,6 @@ Route::post('importClientes', [ClientesController::class, 'ImportClientes'])->na
 
         }
 
-
-
       }
 
   })->name('home');
@@ -228,7 +227,7 @@ Route::post('importClientes', [ClientesController::class, 'ImportClientes'])->na
 
 
   Route::get('requisicion/nueva', 'RequisitionController@NewRequisition')->name('nueva');
-  Route::get('', [UserController::class, 'index'])->name('user.index');
+  //Route::get('', [UserController::class, 'index'])->name('user.index');
 
 
   Route::post('requisicion/submit', 'RequisitionController@SubmitRequisition')->name('submit');
