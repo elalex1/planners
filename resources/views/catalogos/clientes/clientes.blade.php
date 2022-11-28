@@ -11,15 +11,17 @@
           
           <form action=" {{route('ImportClientes')}} " method="post" enctype="multipart/form-data">
             @csrf
-            <input type="file" name="clientes" id="clientes">
-            <a class="waves-effect waves-light btn" ><button type="submit"></button>Importar</a>
+            <input type="file" name="clientes" id="clientes" class="dropify">
             
-          </form>
+            
+          
 
         </div>
         <div class="col s6">
+          <a class="waves-effect waves-light btn" ><button type="submit"></button>Importar</a>
           <a class="waves-effect waves-light btn" href=" {{route('ExportClientes')}} ">Exportar</a> 
         </div>
+      </form>
       </div>
       </div>
     </div>

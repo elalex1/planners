@@ -129,6 +129,6 @@ var pat_url_proveedorByTerm="{{route('select_proveedor_by_term')}}"
 <script src="{{asset('js/compras.js')}}"></script>
 <script src="{{asset('js/nomina.js')}}"></script>
 <script src="{{asset('js/catalogos.js')}}"></script>
-
+<script>$('.dropify').dropify();</script>
  @stack('scripts')
 </html>

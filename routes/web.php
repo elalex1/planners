@@ -35,6 +35,15 @@ use App\Http\Controllers\RequisitionController;
 use App\Http\Controllers\Catalogos\EmpleadosController;
 use App\Http\Controllers\Catalogos\ClientesController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\InventoryController;
+//Compras=================================================
+use App\Http\Controllers\Compras\CotizacionesController;
+use App\Http\Controllers\Compras\OrdenesComprasController;
+use App\Http\Controllers\Compras\RecepcionController;
+use App\Http\Controllers\Compras\DevRecepcionesController;
+use App\Http\Controllers\Compras\ComprasController;
+use App\Http\Controllers\Compras\DevComprasController;
+//=========================================================
 
 /*######################################################################################################*/
 
@@ -564,38 +573,34 @@ Route::post('user', 'UserController@index')->name('user');
 
   /****************************************************************************************************************/
 
-  Route::get('cotizacion','Compras\CotizacionesController@CotizacionGetAll')->name('cotizaciones_all');
-
-  Route::get('cotizacion/nueva','Compras\CotizacionesController@CotizacionNew')->name('cotizaciones_nueva');
-
-  Route::post('cotizacion','Compras\CotizacionesController@CotizacionStore')->name('cotizaciones_store');
-
-
-
-  Route::get('cotizacion/editar/{id}','Compras\CotizacionesController@EditCotizacion')->name('cotizaciones_editar');
-
+  //Route::get('cotizacion','Compras\CotizacionesController@CotizacionGetAll')->name('cotizaciones_all');
+  Route::get('cotizacion', [CotizacionesController::class, 'CotizacionGetAll'])->name('cotizaciones_all');
+  //Route::get('cotizacion/nueva','Compras\CotizacionesController@CotizacionNew')->name('cotizaciones_nueva');
+  Route::get('cotizacion/nueva', [CotizacionesController::class, 'CotizacionNew'])->name('cotizaciones_nueva');
+  //Route::post('cotizacion','Compras\CotizacionesController@CotizacionStore')->name('cotizaciones_store');
+  Route::post('cotizacion', [CotizacionesController::class, 'CotizacionStore'])->name('cotizaciones_store');  
+  //Route::get('cotizacion/editar/{id}','Compras\CotizacionesController@EditCotizacion')->name('cotizaciones_editar');
+  Route::get('cotizacion/editar/{id}', [CotizacionesController::class, 'EditCotizacion'])->name('cotizaciones_editar');
   //Route::put('cotizacion','Compras\CotizacionesController@CotizacionUpdate')->name('cotizaciones_update');
-
   //Route::get('cotizacion/recepciones','Compras\CotizacionesController@GetRecepcionesTerminadas')->name('cotizaciones_recepciones');
-
-  Route::post('cotizacion/add_ligada','Compras\CotizacionesController@CotizacionAddLigada')->name('cotizaciones_compra_add');
-
-  Route::post('cotizacion/add_articles','Compras\CotizacionesController@CotizacionAddArticles')->name('cotizacion_add_articles');
-
-  Route::delete('cotizacion/remov_articles','Compras\CotizacionesController@CotizacionRemoveArticles')->name('cotizaciones_DeleteArticle');
-
-  Route::post('cotizacion/finalizar','Compras\CotizacionesController@CotizacionFinalizar')->name('cotizaciones_finalizar');
-
-  Route::get('cotizacion/ver/{id}','Compras\CotizacionesController@VerCotizacion')->name('cotizaciones_ver');
-
-  Route::post('cotizacion/add_requisiciones','Compras\CotizacionesController@CotizacionAddRequs')->name('cotizaciones_agregar_requs');
-
-  Route::get('cotizacion/contactosemail/{parameters?}','Compras\CotizacionesController@GetContactosProv')->name('cotizaciones_contactos_prov');
-
-  Route::post('cotizacion/enviaremailprov','Compras\CotizacionesController@SendEmailProv')->name('cotizaciones_sendemail_prov');
-
-  Route::post('cotizacion/cancelar','Compras\CotizacionesController@CotizacionCancelar')->name('cotizaciones_cancelar');
-
+  //Route::post('cotizacion/add_ligada','Compras\CotizacionesController@CotizacionAddLigada')->name('cotizaciones_compra_add');
+  Route::post('cotizacion/add_ligada', [CotizacionesController::class, 'CotizacionAddLigada'])->name('cotizaciones_compra_add');
+  //Route::post('cotizacion/add_articles','Compras\CotizacionesController@CotizacionAddArticles')->name('cotizacion_add_articles');
+  Route::post('cotizacion/add_articles', [CotizacionesController::class, 'CotizacionAddArticles'])->name('cotizacion_add_articles');
+  //Route::delete('cotizacion/remov_articles','Compras\CotizacionesController@CotizacionRemoveArticles')->name('cotizaciones_DeleteArticle');
+  Route::delete('cotizacion/remov_articles', [CotizacionesController::class, 'CotizacionRemoveArticles'])->name('cotizaciones_DeleteArticle');
+  //Route::post('cotizacion/finalizar','Compras\CotizacionesController@CotizacionFinalizar')->name('cotizaciones_finalizar');
+  Route::post('cotizacion/finalizar', [CotizacionesControlle::class, 'CotizacionFinalizar'])->name('cotizaciones_finalizar');
+  //Route::get('cotizacion/ver/{id}','Compras\CotizacionesController@VerCotizacion')->name('cotizaciones_ver');
+  Route::get('cotizacion/ver/{id}', [CotizacionesController::class, 'VerCotizacion'])->name('cotizaciones_ver');
+  //Route::post('cotizacion/add_requisiciones','Compras\CotizacionesController@CotizacionAddRequs')->name('cotizaciones_agregar_requs');
+  Route::post('cotizacion/add_requisiciones', [CotizacionesController::class, 'CotizacionAddRequs'])->name('cotizaciones_agregar_requs');
+  //Route::get('cotizacion/contactosemail/{parameters?}','Compras\CotizacionesController@GetContactosProv')->name('cotizaciones_contactos_prov');
+  Route::get('cotizacion/contactosemail/{parameters?}', [CotizacionesController::class, 'GetContactosProv'])->name('cotizaciones_contactos_prov');
+  //Route::post('cotizacion/enviaremailprov','Compras\CotizacionesController@SendEmailProv')->name('cotizaciones_sendemail_prov');
+  Route::post('cotizacion/enviaremailprov', [CotizacionesController::class, 'SendEmailProv'])->name('cotizaciones_sendemail_prov');
+  //Route::post('cotizacion/cancelar','Compras\CotizacionesController@CotizacionCancelar')->name('cotizaciones_cancelar');
+  Route::get('cotizacion/cancelar', [CotizacionesController::class, 'CotizacionCancelar'])->name('cotizaciones_cancelar');
   
 
   /***********************************************************************************************************/
@@ -608,88 +613,88 @@ Route::post('user', 'UserController@index')->name('user');
 
   //Route::get('/ordencompra',[OrdenesComprasController::class, 'OrdenesCompras'])->name('ordenescompras');
 
-  Route::get('/ordencompra','Compras\OrdenesComprasController@OrdenesCompras')->name('ordenescompras');
+  //Route::get('/ordencompra','Compras\OrdenesComprasController@OrdenesCompras')->name('ordenescompras');
+  Route::get('ordencompra', [OrdenesComprasController::class, 'OrdenesCompras'])->name('ordenescompras');
 
-  Route::get('/ordencompra/cotizaciones','Compras\OrdenesComprasController@OrdenesComprasGetCotizaciones')->name('ordenescompras_get_cotizaciones');
+  //Route::get('/ordencompra/cotizaciones','Compras\OrdenesComprasController@OrdenesComprasGetCotizaciones')->name('ordenescompras_get_cotizaciones');
+  Route::get('/ordencompra/cotizaciones', [OrdenesComprasController::class, 'OrdenesComprasGetCotizaciones'])->name('ordenescompras_get_cotizaciones');
+  //Route::post('/ordencompra/cotizaciones','Compras\OrdenesComprasController@OrdenesComprasDesdeCotizacion')->name('ordenescompras_desde_cotizacion');
+  Route::post('/ordencompra/cotizaciones', [OrdenesComprasController::class, 'OrdenesComprasDesdeCotizacion'])->name('ordenescompras_desde_cotizacion');
 
-  Route::post('/ordencompra/cotizaciones','Compras\OrdenesComprasController@OrdenesComprasDesdeCotizacion')->name('ordenescompras_desde_cotizacion');
-
-
-
-  Route::get('ordencompra/nueva', 'Compras\OrdenesComprasController@NewOrder')->name('nuevaOrden');
-
-
-
-  Route::post('ordencompra/submit', 'Compras\OrdenesComprasController@SubmitOrdenCompra')->name('submit.ordencompra');
+  //Route::get('ordencompra/nueva', 'Compras\OrdenesComprasController@NewOrder')->name('nuevaOrden');
+  Route::get('ordencompra/nueva', [OrdenesComprasController::class, 'NewOrder'])->name('nuevaOrden');
 
 
+  //Route::post('ordencompra/submit', 'Compras\OrdenesComprasController@SubmitOrdenCompra')->name('submit.ordencompra');
+  Route::post('ordencompra/submit', [OrdenesComprasController::class, 'SubmitOrdenCompra'])->name('submit.ordencompra');
 
-  Route::get('ordencompra/edit/{id}', 'Compras\OrdenesComprasController@EditOrdenCompra')->where('id', '[0-9]+')->name('ordencompra_editar');
 
+  //Route::get('ordencompra/edit/{id}', 'Compras\OrdenesComprasController@EditOrdenCompra')->where('id', '[0-9]+')->name('ordencompra_editar');
+  Route::get('ordencompra/edit/{id}', [OrdenesComprasController::class, 'EditOrdenCompra'])->where('id', '[0-9]+')->name('ordencompra_editar');
  // Route::get('ordencompra/articulos',  'Compras\OrdenesComprasController@getArticulos')->name('get_articles_oc');
 
-  Route::get('ordencompra/requisiciones','Compras\OrdenesComprasController@getRequisicionesparaordenes')->name('get_requisiciones_oc');
+  //Route::get('ordencompra/requisiciones','Compras\OrdenesComprasController@getRequisicionesparaordenes')->name('get_requisiciones_oc');
+  Route::get('ordencompra/requisiciones', [OrdenesComprasController::class, 'getRequisicionesparaordenes'])->name('get_requisiciones_oc');
 
 
-
-  Route::get('ordenescompras/selectcentproveedores/{parameter?}', 'Compras\OrdenesComprasController@OCCentrosCostos')->name('select.centroscostos');
-
+  //Route::get('ordenescompras/selectcentproveedores/{parameter?}', 'Compras\OrdenesComprasController@OCCentrosCostos')->name('select.centroscostos');
+  Route::get('ordenescompras/selectcentproveedores/{parameter?}', [OrdenesComprasController::class, 'OCCentrosCostos'])->name('select.centroscostos');
   //Route::get('ordenescompras/selectcentroscostos/{parameter?}',['as'=>'select.centroscostos','uses'=>'OrdenesComprasController@OCCentrosCostos']);
 
-  Route::post('ordencompra/submitarticles',  'Compras\OrdenesComprasController@NewOrdenCompraDet')->name('submitarticles_oc');
+  //Route::post('ordencompra/submitarticles',  'Compras\OrdenesComprasController@NewOrdenCompraDet')->name('submitarticles_oc');
+  Route::post('ordencompra/submitarticles', [OrdenesComprasController::class, 'NewOrdenCompraDet'])->name('submitarticles_oc');
 
 
-
-  Route::delete('ordencompra/edit/ordencompra/deletearticle',  'Compras\OrdenesComprasController@DeleteArticle')->name('ordencompra_DeleteArticle');
-
-
-
-  Route::post('ordencompra/requisicionesbytype',  'Compras\OrdenesComprasController@GetRequisitionCompraByType');
+  //Route::delete('ordencompra/edit/ordencompra/deletearticle',  'Compras\OrdenesComprasController@DeleteArticle')->name('ordencompra_DeleteArticle');
+  Route::delete('ordencompra/edit/ordencompra/deletearticle', [OrdenesComprasController::class, 'DeleteArticle'])->name('ordencompra_DeleteArticle');
 
 
-
-  Route::get('ordencompra/ver/{id}',  'Compras\OrdenesComprasController@VerCompra')->where('id', '[0-9]+')->name('ver-auth-oc');
-
-
-
-  Route::post('ordencompra/compra/update',  'Compras\OrdenesComprasController@UpdateCompra')->name('ordencompra_update');
+  //Route::post('ordencompra/requisicionesbytype',  'Compras\OrdenesComprasController@GetRequisitionCompraByType');
+  Route::post('ordencompra/requisicionesbytype', [OrdenesComprasController::class, 'GetRequisitionCompraByType']);
 
 
-
-  Route::post('ordencompra/agregarrequisicion', 'Compras\OrdenesComprasController@AgregarRequisition')->name('agregar_requ_ordencompra');
-
-
-
-  Route::post('ordencompra/apply',  'Compras\OrdenesComprasController@AppOrdenCompra')->name('appordencompra');
+  //Route::get('ordencompra/ver/{id}',  'Compras\OrdenesComprasController@VerCompra')->where('id', '[0-9]+')->name('ver-auth-oc');
+  Route::get('ordencompra/ver/{id}', [OrdenesComprasController::class, 'VerCompra'])->where('id', '[0-9]+')->name('ver-auth-oc');
 
 
-
-  Route::post('ordencompra/sendemail',  'Compras\OrdenesComprasController@SendEmail')->name('sendemailordencompra');
-
-
-
-  Route::get('ordencompra/autoriza/{id}', 'Compras\OrdenesComprasController@AutorizaOrdenCompra')->where('id', '[0-9]+')->name('autorizaordencompra');
+  //Route::post('ordencompra/compra/update',  'Compras\OrdenesComprasController@UpdateCompra')->name('ordencompra_update');
+  Route::post('ordencompra/compra/update', [OrdenesComprasController::class, 'UpdateCompra'])->name('ordencompra_update');
 
 
-
-  Route::post('ordencompra/autorizar', 'Compras\OrdenesComprasController@AuthOrdenCompra')->where('id', '[0-9]+')->name('autorizaroc');
-
-
-
-  Route::post('ordencompra/cancelar', 'Compras\OrdenesComprasController@CancelOrdenCompra')->name('cancelarordencompra');
+  //Route::post('ordencompra/agregarrequisicion', 'Compras\OrdenesComprasController@AgregarRequisition')->name('agregar_requ_ordencompra');
+  Route::post('ordencompra/agregarrequisicion', [OrdenesComprasController::class, 'AgregarRequisition'])->name('agregar_requ_ordencompra');
 
 
+  //Route::post('ordencompra/apply',  'Compras\OrdenesComprasController@AppOrdenCompra')->name('appordencompra');
+  Route::post('ordencompra/apply', [OrdenesComprasController::class, 'AppOrdenCompra'])->name('appordencompra');
 
-  Route::get('pdfordencompra/{id}', 'Compras\OrdenesComprasController@PDFView')->name('pdfordencompra');
+
+  //Route::post('ordencompra/sendemail',  'Compras\OrdenesComprasController@SendEmail')->name('sendemailordencompra');
+  Route::post('ordencompra/sendemail', [OrdenesComprasController::class, 'SendEmail'])->name('sendemailordencompra');
 
 
+  //Route::get('ordencompra/autoriza/{id}', 'Compras\OrdenesComprasController@AutorizaOrdenCompra')->where('id', '[0-9]+')->name('autorizaordencompra');
+  Route::get('ordencompra/autoriza/{id}', [OrdenesComprasController::class, 'AutorizaOrdenCompra'])->where('id', '[0-9]+')->name('autorizaordencompra');
 
-  Route::post('ordencompra/sendpdf', 'Compras\OrdenesComprasController@SendEmailPDFAuth')->name('sendpdfordencompra');
 
+  //Route::post('ordencompra/autorizar', 'Compras\OrdenesComprasController@AuthOrdenCompra')->where('id', '[0-9]+')->name('autorizaroc');
+  Route::post('ordencompra/autorizar', [OrdenesComprasController::class, 'AuthOrdenCompra'])->where('id', '[0-9]+')->name('autorizaroc');
+
+
+  //Route::post('ordencompra/cancelar', 'Compras\OrdenesComprasController@CancelOrdenCompra')->name('cancelarordencompra');
+  Route::post('ordencompra/cancelar', [OrdenesComprasController::class, 'CancelOrdenCompra'])->name('cancelarordencompra');
+
+
+  //Route::get('pdfordencompra/{id}', 'Compras\OrdenesComprasController@PDFView')->name('pdfordencompra');
+  Route::get('pdfordencompra/{id}', [OrdenesComprasController::class, 'PDFView'])->name('pdfordencompra');
+
+
+  //Route::post('ordencompra/sendpdf', 'Compras\OrdenesComprasController@SendEmailPDFAuth')->name('sendpdfordencompra');
+  Route::post('ordencompra/sendpdf', [OrdenesComprasController::class, 'SendEmailPDFAuth'])->name('sendpdfordencompra');
   
 
-  Route::get('pdfordencompraautorizado/{id}', 'Compras\OrdenesComprasController@PDFViewAuth')->name('pdfordencompraauth');
-
+  //Route::get('pdfordencompraautorizado/{id}', 'Compras\OrdenesComprasController@PDFViewAuth')->name('pdfordencompraauth');
+  Route::get('pdfordencompraautorizado/{id}', [OrdenesComprasController::class, 'PDFViewAuth'])->name('pdfordencompraauth');
   
 
   /*******************************************************************************************************************************/
@@ -698,65 +703,65 @@ Route::post('user', 'UserController@index')->name('user');
 
   /*******************************************************************************************************************************/
 
-  Route::get('recepcionmercancia','Compras\RecepcionController@getVistaRecepciones')->name('recepcionmercancia');
+  //Route::get('recepcionmercancia','Compras\RecepcionController@getVistaRecepciones')->name('recepcionmercancia');
+  Route::get('recepcionmercancia', [RecepcionController::class, 'getVistaRecepciones'])->name('recepcionmercancia');
+
+
+  //Route::get('recepcionmercancia/nueva','Compras\RecepcionController@vistaNuevaRecepcion')->name('recepcionmercancia_nueva');
+  Route::get('recepcionmercancia/nueva', [RecepcionController::class, 'vistaNuevaRecepcion'])->name('recepcionmercancia_nueva');
+
+
+  //Route::post('recepcionmercancia/store','Compras\RecepcionController@saveNuevaRecepcion')->name('recepcionmercancia_store');
+  Route::post('recepcionmercancia/store', [RecepcionController::class, 'saveNuevaRecepcion'])->name('user.index');
+
+
+  Route::get('recepcionmercancia/edit/{id}',[RecepcionController::class, 'editarNuevaRecepcion'])->name('recepcionmercancia_editar');
 
 
 
-  Route::get('recepcionmercancia/nueva','Compras\RecepcionController@vistaNuevaRecepcion')->name('recepcionmercancia_nueva');
+  Route::post('recepcionmercancia/agregararticulos',[RecepcionController::class, 'addRenglonNuevaRecepcion'])->name('recepcionmercancia_addRenglon');
 
 
 
-  Route::post('recepcionmercancia/store','Compras\RecepcionController@saveNuevaRecepcion')->name('recepcionmercancia_store');
+  Route::delete('recepcionmercancia/editar/eliminararticulo', [RecepcionController::class, 'DeleteArticle'])->name('recepcionmercancia_DeleteArticle');
 
 
 
-  Route::get('recepcionmercancia/edit/{id}','Compras\RecepcionController@editarNuevaRecepcion')->name('recepcionmercancia_editar');
+  Route::put('recepcionmercancia/update', [RecepcionController::class, 'updateNuevaRecepcion'])->name('recepcionmercancia_update');
 
 
 
-  Route::post('recepcionmercancia/agregararticulos','Compras\RecepcionController@addRenglonNuevaRecepcion')->name('recepcionmercancia_addRenglon');
+  Route::get('recepcionmercancia/verificarmoneda/{moneda}',[RecepcionController::class, 'verificarMonedaNuevaRecepcion'])->name('recepcionmercancia_verif_moneda');
+
+  Route::get('recepcionmercancia/verificarproveedor/{proveedor}',[RecepcionController::class, 'verificarproveedorRecepcion'])->name('recepcionmercancia_verif_prov');
+
+  Route::get('recepcionmercancia/ordenescompraporrecibir',[RecepcionController::class, 'ordenescompraRecepcion'])->name('recepcionmercancia_ordenescompra');
 
 
 
-  Route::delete('recepcionmercancia/editar/eliminararticulo','Compras\RecepcionController@DeleteArticle')->name('recepcionmercancia_DeleteArticle');
+  Route::post('recepcionmercancia/ordenescompraporrecibir/agregar',[RecepcionController::class, 'addOrdenescompraRecepcion'])->name('recepcionmercancia_ordenescompra_add');
 
 
 
-  Route::put('recepcionmercancia/update','Compras\RecepcionController@updateNuevaRecepcion')->name('recepcionmercancia_update');
+  Route::put('recepcionmercancia/finalizarrecepcion',[RecepcionController::class, 'RecepcionFinalizar'])->name('recepcionmercancia_finalizar');
 
 
 
-  Route::get('recepcionmercancia/verificarmoneda/{moneda}','Compras\RecepcionController@verificarMonedaNuevaRecepcion')->name('recepcionmercancia_verif_moneda');
+  Route::put('recepcionmercancia/cancelarrecepcion',[RecepcionController::class, 'cancelarRecepcion'])->name('recepcionmercancia_cancelar');
 
-  Route::get('recepcionmercancia/verificarproveedor/{proveedor}','Compras\RecepcionController@verificarproveedorRecepcion')->name('recepcionmercancia_verif_prov');
+  Route::post('recepcionmercancia/recepcionimagen',[RecepcionController::class, 'RecepcionImagen'])->name('recepcionmercancia_doctos');
 
-  Route::get('recepcionmercancia/ordenescompraporrecibir','Compras\RecepcionController@ordenescompraRecepcion')->name('recepcionmercancia_ordenescompra');
-
-
-
-  Route::post('recepcionmercancia/ordenescompraporrecibir/agregar','Compras\RecepcionController@addOrdenescompraRecepcion')->name('recepcionmercancia_ordenescompra_add');
-
-
-
-  Route::put('recepcionmercancia/finalizarrecepcion','Compras\RecepcionController@RecepcionFinalizar')->name('recepcionmercancia_finalizar');
-
-
-
-  Route::put('recepcionmercancia/cancelarrecepcion','Compras\RecepcionController@cancelarRecepcion')->name('recepcionmercancia_cancelar');
-
-  Route::post('recepcionmercancia/recepcionimagen','Compras\RecepcionController@RecepcionImagen')->name('recepcionmercancia_doctos');
-
-  Route::delete('recepcionmercancia/recepcionimagendelete','Compras\RecepcionController@RecepcionImagenDelete')->name('recepcionmercancia_doctos_delete');
+  Route::delete('recepcionmercancia/recepcionimagendelete',[RecepcionController::class, 'RecepcionImagenDelete'])->name('recepcionmercancia_doctos_delete');
 
 
 
   //Route::put('recepcionmercancia/finalizarligada','Compras\RecepcionController@finalizarRecepcionligada')->name('recepcionmercancia_finalizarligada');
 
-  Route::get('recepcionmercancia/visualizar/{id}','Compras\RecepcionController@visualizarRecepcion')->name('recepcionmercancia_visualizar');
+  Route::get('recepcionmercancia/visualizar/{id}',[RecepcionController::class, 'visualizarRecepcion'])->name('recepcionmercancia_visualizar');
 
-  Route::get('recepcionmercancia/pdf/{id}','Compras\RecepcionController@PDFView')->name('recepcionmercancia_pdf');
+  Route::get('recepcionmercancia/pdf/{id}',[RecepcionController::class, 'PDFView'])->name('recepcionmercancia_pdf');
 
-  Route::post('recepcionmercancia/actualizarlote','Compras\RecepcionController@guardarLote')->name('recepcionmercancia_actualizarlote');
+  Route::post('recepcionmercancia/actualizarlote',[RecepcionController::class, 'guardarLote'])->name('recepcionmercancia_actualizarlote');
 
    /******************************************************************************************************/
 
@@ -764,29 +769,30 @@ Route::post('user', 'UserController@index')->name('user');
 
   /******************************************************************************************************/
 
-  Route::get('devrecepcionmercancia','Compras\DevRecepcionesController@DevRecepcionGetAll')->name('devrecepcionmercancia_all');
+  //Route::get('devrecepcionmercancia','Compras\DevRecepcionesController@DevRecepcionGetAll')->name('devrecepcionmercancia_all');
+  Route::get('devrecepcionmercancia', [DevRecepcionesController::class, 'DevRecepcionGetAll'])->name('devrecepcionmercancia_all');
 
-  Route::get('devrecepcionmercancia/nueva','Compras\DevRecepcionesController@DevRecepcionNew')->name('dev_recepciones_nueva');
+  Route::get('devrecepcionmercancia/nueva',[DevRecepcionesController::class,'DevRecepcionNew'])->name('dev_recepciones_nueva');
 
-  Route::post('devrecepcionmercancia','Compras\DevRecepcionesController@DevRecepcionStore')->name('dev_recepciones_store');
+  Route::post('devrecepcionmercancia',[DevRecepcionesController::class,'DevRecepcionStore'])->name('dev_recepciones_store');
 
-  Route::get('devrecepcionmercancia/edit/{id}','Compras\DevRecepcionesController@DevRecepcionEdit')->name('dev_recepciones_editar');
+  Route::get('devrecepcionmercancia/edit/{id}',[DevRecepcionesController::class,'DevRecepcionEdit'])->name('dev_recepciones_editar');
 
-  Route::put('devrecepcionmercancia','Compras\DevRecepcionesController@DevRecepcionUpdate')->name('dev_recepciones_update');
+  Route::put('devrecepcionmercancia',[DevRecepcionesController::class,'DevRecepcionUpdate'])->name('dev_recepciones_update');
 
-  Route::post('devrecepcionmercancia/recepciones','Compras\DevRecepcionesController@DevRecepcionDesdeRecepcion')->name('dev_recepciones_desde_recepcion');
+  Route::post('devrecepcionmercancia/recepciones',[DevRecepcionesController::class,'DevRecepcionDesdeRecepcion'])->name('dev_recepciones_desde_recepcion');
 
   //Route::post('cotizacion/add_ligada','Compras\CotizacionesController@CotizacionAddLigada')->name('cotizaciones_compra_add');
 
-  Route::post('devrecepcionmercancia/add_articles','Compras\DevRecepcionesController@DevRecepcionAddArticles')->name('dev_recepciones_add_articles');
+  Route::post('devrecepcionmercancia/add_articles',[DevRecepcionesController::class,'DevRecepcionAddArticles'])->name('dev_recepciones_add_articles');
 
-  Route::delete('devrecepcionmercancia/remov_articles','Compras\DevRecepcionesController@DevRecepcionRemoveArticles')->name('dev_recepciones_delete_article');
+  Route::delete('devrecepcionmercancia/remov_articles',[DevRecepcionesController::class,'DevRecepcionRemoveArticles'])->name('dev_recepciones_delete_article');
 
-  Route::post('devrecepcionmercancia/finalizar','Compras\DevRecepcionesController@DevRecepcionFinalizar')->name('dev_recepciones_finalizar');
+  Route::post('devrecepcionmercancia/finalizar',[DevRecepcionesController::class,'DevRecepcionFinalizar'])->name('dev_recepciones_finalizar');
 
-  Route::post('devrecepcionmercancia/cancelar','Compras\DevRecepcionesController@DevRecepcionCancelar')->name('dev_recepciones_cancelar');
+  Route::post('devrecepcionmercancia/cancelar',[DevRecepcionesController::class,'DevRecepcionCancelar'])->name('dev_recepciones_cancelar');
 
-  Route::get('devrecepcionmercancia/ver/{id}','Compras\DevRecepcionesController@DevRecepcionVer')->name('dev_recepciones_visualizar');
+  Route::get('devrecepcionmercancia/ver/{id}',[DevRecepcionesController::class,'DevRecepcionVer'])->name('dev_recepciones_visualizar');
 
   /*Route::get('cotizacion/ver/{id}','Compras\CotizacionesController@VerCotizacion')->name('cotizaciones_ver');
 
@@ -798,41 +804,42 @@ Route::post('user', 'UserController@index')->name('user');
 
   /*****************************************************************************************************/
 
-  /**** Compras ****/
+  /****                                        Compras                                              ****/
 
   /*****************************************************************************************************/
 
-  Route::get('compra'/*/{parameters?}'*/,'Compras\ComprasController@ComprasGetAll')->name('compras_all');
+  //Route::get('compra'/*/{parameters?}'*/,'Compras\ComprasController@ComprasGetAll')->name('compras_all');
+  Route::get('compra', [ComprasController::class, 'ComprasGetAll'])->name('compras_all');
 
-  Route::get('compra/nueva','Compras\ComprasController@ComprasNew')->name('compras_nueva');
+  Route::get('compra/nueva',[ComprasController::class, 'ComprasNew'])->name('compras_nueva');
 
-  Route::post('compra','Compras\ComprasController@CompraStore')->name('compras_store');
+  Route::post('compra',[ComprasController::class, 'CompraStore'])->name('compras_store');
 
-  Route::get('compra/editar/{id}','Compras\ComprasController@EditCompra')->name('compras_editar');
+  Route::get('compra/editar/{id}',[ComprasController::class,'EditCompra'])->name('compras_editar');
 
-  Route::put('compra','Compras\ComprasController@ComprasUpdate')->name('compras_update');
+  Route::put('compra',[ComprasController::class,'ComprasUpdate'])->name('compras_update');
 
-  Route::post('compra/archivoadd','Compras\ComprasController@ComprasArchivoAdd')->name('compras_archivo_add');
+  Route::post('compra/archivoadd',[ComprasController::class,'ComprasArchivoAdd'])->name('compras_archivo_add');
 
-  Route::delete('compra/archivodelete','Compras\ComprasController@ComprasArchivoDelete')->name('compras_archivo_delete');
+  Route::delete('compra/archivodelete',[ComprasController::class,'ComprasArchivoDelete'])->name('compras_archivo_delete');
 
-  Route::get('compra/ver/{id}','Compras\ComprasController@visualizarCompra')->name('compras_visualizar');
+  Route::get('compra/ver/{id}',[ComprasController::class,'visualizarCompra'])->name('compras_visualizar');
 
-  Route::get('compra/recepciones','Compras\ComprasController@GetRecepcionesTerminadas')->name('compras_recepciones');
+  Route::get('compra/recepciones',[ComprasController::class,'GetRecepcionesTerminadas'])->name('compras_recepciones');
 
-  Route::post('compra/add_ligada','Compras\ComprasController@ComprasAddLigada')->name('compra_add_recepcion');
+  Route::post('compra/add_ligada',[ComprasController::class,'ComprasAddLigada'])->name('compra_add_recepcion');
 
-  Route::post('compra/add_articulo','Compras\ComprasController@ComprasAddRenglon')->name('compra_add_articulo');
+  Route::post('compra/add_articulo',[ComprasController::class,'ComprasAddRenglon'])->name('compra_add_articulo');
 
-  Route::delete('compra/delete_articulo','Compras\ComprasController@ComprasDeleteRenglon')->name('compra_delete_articulo');
+  Route::delete('compra/delete_articulo',[ComprasController::class,'ComprasDeleteRenglon'])->name('compra_delete_articulo');
 
-  Route::post('compra/finalizar','Compras\ComprasController@ComprasFinalizar')->name('compra_finalizar');
+  Route::post('compra/finalizar',[ComprasController::class,'ComprasFinalizar'])->name('compra_finalizar');
 
-  Route::post('compra/cancelar','Compras\ComprasController@ComprasCancelar')->name('compra_cancelar');
+  Route::post('compra/cancelar',[ComprasController::class,'ComprasCancelar'])->name('compra_cancelar');
 
 
 
-  Route::get('compra/pdf/{id}','Compras\ComprasController@ComprasVerPdf')->name('compras_ver_pdf');
+  Route::get('compra/pdf/{id}',[ComprasController::class,'ComprasVerPdf'])->name('compras_ver_pdf');
 
   /******************************************************************************************************/
 
@@ -840,31 +847,31 @@ Route::post('user', 'UserController@index')->name('user');
 
   /******************************************************************************************************/
 
-  Route::get('devcompra','Compras\DevComprasController@DevCompraGetAll')->name('dev_compras_all');
+  Route::get('devcompra',[DevComprasController::class,'DevCompraGetAll'])->name('dev_compras_all');
 
-  Route::get('devcompra/terminadas','Compras\DevComprasController@DevCompraGetAllT')->name('dev_compras_all_t');
+  Route::get('devcompra/terminadas',[DevComprasController::class,'DevCompraGetAllT'])->name('dev_compras_all_t');
 
-  Route::get('devcompra/nueva','Compras\DevComprasController@DevCompraNew')->name('dev_compras_nueva');
+  Route::get('devcompra/nueva',[DevComprasController::class,'DevCompraNew'])->name('dev_compras_nueva');
 
-  Route::post('devcompra','Compras\DevComprasController@DevCompraStore')->name('dev_compras_store');
+  Route::post('devcompra',[DevComprasController::class,'DevCompraStore'])->name('dev_compras_store');
 
-  Route::get('devcompra/editar/{id}','Compras\DevComprasController@DevCompraEdit')->name('dev_compras_editar');
+  Route::get('devcompra/editar/{id}',[DevComprasController::class,'DevCompraEdit'])->name('dev_compras_editar');
 
-  Route::put('devcompra','Compras\DevComprasController@DevCompraUpdate')->name('dev_compras_update');
+  Route::put('devcompra',[DevComprasController::class,'DevCompraUpdate'])->name('dev_compras_update');
 
-  Route::post('devcompra/compras','Compras\DevComprasController@DevCompraDesdeCompra')->name('dev_compras_desde_compra');
+  Route::post('devcompra/compras',[DevComprasController::class,'DevCompraDesdeCompra'])->name('dev_compras_desde_compra');
 
   //Route::post('cotizacion/add_ligada','Compras\CotizacionesController@CotizacionAddLigada')->name('cotizaciones_compra_add');
 
-  Route::post('devcompra/add_articles','Compras\DevComprasController@DevCompraAddArticles')->name('dev_compras_add_articles');
+  Route::post('devcompra/add_articles',[DevComprasController::class,'DevCompraAddArticles'])->name('dev_compras_add_articles');
 
-  Route::delete('devcompra/remov_articles','Compras\DevComprasController@DevCompraRemoveArticles')->name('dev_compras_delete_article');
+  Route::delete('devcompra/remov_articles',[DevComprasController::class,'DevCompraRemoveArticles'])->name('dev_compras_delete_article');
 
-  Route::post('devcompra/finalizar','Compras\DevComprasController@DevCompraFinalizar')->name('dev_compras_finalizar');
+  Route::post('devcompra/finalizar',[DevComprasController::class,'DevCompraFinalizar'])->name('dev_compras_finalizar');
 
-  Route::post('devcompra/cancelar','Compras\DevComprasController@DevCompraCancelar')->name('dev_compras_cancelar');
+  Route::post('devcompra/cancelar',[DevComprasController::class,'DevCompraCancelar'])->name('dev_compras_cancelar');
 
-  Route::get('devcompra/ver/{id}','Compras\DevComprasController@DevCompraVer')->name('dev_compras_visualizar');
+  Route::get('devcompra/ver/{id}',[DevComprasController::class,'DevCompraVer'])->name('dev_compras_visualizar');
 
   /*Route::get('cotizacion/ver/{id}','Compras\CotizacionesController@VerCotizacion')->name('cotizaciones_ver');
 
