@@ -33,16 +33,14 @@
         <div class="card-content">
           <span class="card-title center-align">Clientes</span>
           
-          <table id="tableGeneral" >
-
+          <table>
             <thead>
-                <tr>
-                    <th data-priority="1">Nombre</th>
-                    <th data-priority="1">Correo</th>
-                    <th data-priority="3">Contacto</th>
-                </tr>
+              <tr>
+                  <th>Nombre</th>
+                  <th>Correo</th>
+                  <th>Contacto</th>
+              </tr>
             </thead>
-
     
             <tbody>
               @foreach ($clientes as $cliente)

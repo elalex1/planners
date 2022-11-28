@@ -174,7 +174,7 @@ Route::post('importClientes', [ClientesController::class, 'ImportClientes'])->na
 
         }else{
 
-          return redirect('requisicion');
+          return redirect('inicio');
 
         }
 
@@ -214,20 +214,21 @@ Route::post('importClientes', [ClientesController::class, 'ImportClientes'])->na
 
 
 
-  Route::get('requisicion', 'RequisitionController@Requisition')->name('requisicion');
+ 
+  Route::get('requisicion', [RequisitionController::class, 'Requisition'])->name('requisicion');
 
   //Boton autoriza requisicion
 
-  Route::post('requisicion/autorizar', 'RequisitionController@AuthRequisition')->where('id', '[0-9]+')->name('autorizar');
-
+  //Route::post('requisicion/autorizar', 'RequisitionController@AuthRequisition')->where('id', '[0-9]+')->name('autorizar');
+  Route::post('requisicion/autorizar', [RequisitionController::class, 'AuthRequisition'])->where('id', '[0-9]+')->name('autorizar');
 
 
   Route::post('requisicion/cancelar', 'RequisitionController@CancelRequisition')->name('cancelar');
-
+  Route::post('requisicion/cancelar', [RequisitionController::class, 'CancelRequisition'])->name('cancelar');
 
 
   Route::get('requisicion/nueva', 'RequisitionController@NewRequisition')->name('nueva');
-
+  Route::get('', [UserController::class, 'index'])->name('user.index');
 
 
   Route::post('requisicion/submit', 'RequisitionController@SubmitRequisition')->name('submit');
