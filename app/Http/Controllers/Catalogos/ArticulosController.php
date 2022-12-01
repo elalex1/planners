@@ -75,6 +75,36 @@ class ArticulosController extends Controller
 
     public function ExportExcel(){
         $articulos=$this->Articulo->articulosAll();
-        return $articulos;
+        return(new FastExcel($articulos))->download('Articulos.xlsx');
     }
+
+    public function ImportExcel (Request $request){
+        $users = (new FastExcel)->import($request->articulos, function ($line) {
+            return ArticuloModel::create([
+                'familia_articulo_id' => $line['familia_articulo_id'],
+                'nombre' => $line['nombre'],
+                'estatus' => $line['estatus'],
+                'almacenable' => $line['almacenable'],
+                'es_servicio' => $line['es_servicio'],
+                'seguimiento_lotes' => $line['seguimiento_lotes'],
+                'caducidad' => $line['caducidad'],
+                'unidad_venta' => $line['unidad_venta'],
+                'unidad_compra' => $line['unidad_compra'],
+                'contenido_compra' => $line['contenido_compra'],
+                'pesar_articulo' => $line['pesar_articulo'],
+                'peso_unitario' => $line['peso_unitario'],
+                'peso_variante' => $line['peso_variante'],
+                'importado' => $line['importado'],
+                'pctaje_arancel' => $line['pctaje_arancel'],
+                'es_kit' => $line['es_kit'],
+                'dias_produccion' => $line['dias_produccion'],
+                'clave_fiscal' => $line['clave_fiscal'],
+                'fecha_creacion' => $line['fecha_creacion'],
+                'fecha_modificacion' => $line['fecha_modificacion'],
+                'usuario_creacion' => $line['usuario_creacion'],
+                'usuario_modificacion' => $line['usuario_modificacion']
+            ]);
+        });
+        return redirect()->back();
+       }
 }

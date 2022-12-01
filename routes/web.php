@@ -616,6 +616,8 @@ Route::post('importClientes', [ClientesController::class, 'ImportClientes'])->na
     Route::get('articulos',[ArticulosController::class,'articulosAll'])->name('cat_articulos');
     Route::post('articulos/kardexexistencias',[ArticulosController::class,'articulosKardexExistencias'])->name('cat_articulos_kardex_existencias');
     Route::post('articulos/kardexvista',[ArticulosController::class,'articulosKardexMov'])->name('cat_articulos_kardex_vista');
+    Route::get('articulos/export', [ArticulosController::class, 'ExportExcel'])->name('ExportArticulos');
+    Route::post('articulos/import', [ArticulosController::class, 'ImportExcel'])->name('ImportArticulos');
   /*================== */
    
 

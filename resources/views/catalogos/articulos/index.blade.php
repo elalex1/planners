@@ -66,6 +66,16 @@
 
     </div>
 
+    <form action=" {{route('ImportArticulos')}} " method="post" enctype="multipart/form-data">
+        @csrf
+        <input type="file" name="articulos" id="articulos" class="dropify">
+    </div>
+    <div class="col s6">
+      <a class="waves-effect waves-light btn" ><button type="submit"></button>Importar</a>
+      <a class="waves-effect waves-light btn" href=" {{route('ExportArticulos')}} ">Exportar</a> 
+    </div>
+  </form>
+
 </div>
 
 <div id="modalInfo" class="modal modal-fixed-footer xl">

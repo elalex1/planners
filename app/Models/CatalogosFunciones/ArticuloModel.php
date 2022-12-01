@@ -7,6 +7,15 @@ use Illuminate\Support\Facades\DB;
 
 class ArticuloModel extends Model
 {
+
+    protected $table = "articulos";
+    protected $fillable = ['familia_articulo_id','nombre','estatus','almacenable','es_servicio',
+    'seguimiento_lotes','caducidad','unidad_venta','unidad_compra','contenido_compra','pesar_articulo',
+    'peso_unitario','peso_variante','importado','pctaje_arancel','es_kit','dias_produccion','clave_fiscal',
+    'fecha_creacion','fecha_modificacion','usuario_creacion','usuario_modificacion'];
+
+    public $timestamps = false;
+    
     public function articulosAll(){
         $qry="SELECT * FROM articulos;";
         try{
