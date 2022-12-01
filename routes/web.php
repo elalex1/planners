@@ -50,7 +50,7 @@ use App\Http\Controllers\Catalogos\TiposContratosController;
 use App\Http\Controllers\Catalogos\FrecuenciasNominasController;
 use App\Http\Controllers\Catalogos\DepartamentosController;
 use App\Http\Controllers\Catalogos\PuestosController;
-
+use App\Http\Controllers\Catalogos\ArticulosController;
 /*######################################################################################################*/
 
 /****                                  CLEAR CACHE                                                   ****/
@@ -613,10 +613,11 @@ Route::post('importClientes', [ClientesController::class, 'ImportClientes'])->na
 
     ////////////////////////////////////////Articulos
 
-    Route::get('articulos','Catalogos\ArticulosController@articulosAll')->name('cat_articulos');
-    Route::post('articulos/kardexexistencias','Catalogos\ArticulosController@articulosKardexExistencias')->name('cat_articulos_kardex_existencias');
-    Route::post('articulos/kardexvista','Catalogos\ArticulosController@articulosKardexMov')->name('cat_articulos_kardex_vista');
-  /* */
+    Route::get('articulos',[ArticulosController::class,'articulosAll'])->name('cat_articulos');
+    Route::post('articulos/kardexexistencias',[ArticulosController::class,'articulosKardexExistencias'])->name('cat_articulos_kardex_existencias');
+    Route::post('articulos/kardexvista',[ArticulosController::class,'articulosKardexMov'])->name('cat_articulos_kardex_vista');
+  /*================== */
+   
 
   /******************************************************************************************************/
 

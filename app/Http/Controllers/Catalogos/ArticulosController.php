@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\CatalogoModel;
 use App\Models\CatalogosFunciones\ArticuloModel;
 use Illuminate\Http\Request;
+use Rap2hpoutre\FastExcel\FastExcel;
 
 class ArticulosController extends Controller
 {
@@ -70,5 +71,10 @@ class ArticulosController extends Controller
         $datos=$this->Articulo->articulosKardexMov($articulo_id,$almacen_id,$fecha_inicio,$fecha_fin,$costo_inic,$inv_inic);
         
         return json_encode($datos);
+    }
+
+    public function ExportExcel(){
+        $articulos=$this->Articulo->articulosAll();
+        return $articulos;
     }
 }
