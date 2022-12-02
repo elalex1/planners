@@ -18,8 +18,13 @@
 
         </div>
         <div class="col s6">
-          <a class="waves-effect waves-light btn" ><button type="submit"></button>Importar</a>
-          <a class="waves-effect waves-light btn" href=" {{route('ExportClientes')}} ">Exportar</a> 
+          <button type="submit"><a class="waves-effect waves-light btn" >Importar</a></button>
+          <a class="waves-effect waves-light btn" href=" {{route('ExportClientes')}} ">Exportar</a>
+          <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>  {{--Por si sale un error xd--}}
+            @endforeach
+        </ul>
         </div>
       </form>
       </div>
