@@ -1,37 +1,6 @@
 @extends('app')
 @section('title','Clientes')
 @section('content')
-{{--Importar Y exportar Clientes--}}
-<div class="row">
-  <div class="col s12 m12">
-    <div class="card White">
-      <div class="card-content">
-        <div class="row">
-        <div class="col s6">
-          
-          <form action=" {{route('ImportClientes')}} " method="post" enctype="multipart/form-data">
-            @csrf
-            <input type="file" name="clientes" id="clientes" class="dropify">
-            
-            
-          
-
-        </div>
-        <div class="col s6">
-          <button type="submit"><a class="waves-effect waves-light btn" >Importar</a></button>
-          <a class="waves-effect waves-light btn" href=" {{route('ExportClientes')}} ">Exportar</a>
-          <ul>
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>  {{--Por si sale un error xd--}}
-            @endforeach
-        </ul>
-        </div>
-      </form>
-      </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 {{--Tabla clientes--}}
 <div class="row">
@@ -40,7 +9,7 @@
         <div class="card-content">
           <span class="card-title center-align">Clientes</span>
           
-          <table>
+          <table id="myTable" name="myTable" class="display" style="width:100%">
             <thead>
               <tr>
                   <th>Nombre</th>
@@ -64,4 +33,27 @@
       </div>
     </div>
   </div>
+{{--IMPORT Y EXPORT EXCEL--}}
+  <div class="card">
+    <div class="card-content">
+        <form action=" {{route('ImportClientes')}} " method="post" enctype="multipart/form-data">
+            @csrf
+            <input type="file" name="articulos" id="articulos" class="dropify">
+       
+        <div class="row center-align">
+          <div class="row"></div>  
+          <div class="col s12">
+                <button class="waves-effect waves-light btn" type="submit">Importar</button>
+                <a class="waves-effect waves-light btn" href=" {{route('ExportClientes')}} ">Exportar</a> 
+          </div>
+        </div>
+      </form>
+    </div>
+</div>
+
 @endsection
+<script>
+ $(document).ready( function () {
+    $('#Clientes').DataTable();
+} ); 
+</script>

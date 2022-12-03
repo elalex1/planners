@@ -65,18 +65,26 @@
         </table>
 
     </div>
-
-    <form action=" {{route('ImportArticulos')}} " method="post" enctype="multipart/form-data">
-        @csrf
-        <input type="file" name="articulos" id="articulos" class="dropify">
-    </div>
-    <div class="col s6">
-      <a class="waves-effect waves-light btn" ><button type="submit"></button>Importar</a>
-      <a class="waves-effect waves-light btn" href=" {{route('ExportArticulos')}} ">Exportar</a> 
-    </div>
-  </form>
-
 </div>
+
+    <div class="card">
+        <div class="card-content">
+            <form action=" {{route('ImportArticulos')}} " method="post" enctype="multipart/form-data">
+                @csrf
+                <input type="file" name="articulos" id="articulos" class="dropify">
+           
+            <div class="row center-align">
+                <div class="col s12">
+                    <button class="waves-effect waves-light btn" type="submit">Importar</button>
+                    <a class="waves-effect waves-light btn" href=" {{route('ExportArticulos')}} ">Exportar</a> 
+                  </div>
+            </div>
+          </form>
+          <div class="row"></div>
+        </div>
+    </div>
+
+
 
 <div id="modalInfo" class="modal modal-fixed-footer xl">
 
