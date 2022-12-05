@@ -30,6 +30,9 @@
     <li class="bold"><a class="waves-effect waves-light " href="{{ asset('/requisicion') }}">Requisiciones</a>
     </li>
 
+    <li class="bold"><a class="waves-effect waves-light" href="{{ asset('/clientes') }}">Clientes</a></li>
+    <li class="bold"><a class="waves-effect waves-light" href="{{ asset('/proveedores') }}">Proveedores</a></li>
+
   <li >
 
     <ul class="collapsible collapsible-accordion">
@@ -151,7 +154,7 @@
         </ul>
       </li>
       
-      <li class="bold"><a class="waves-effect waves-light" href="{{ asset('/clientes') }}">Clientes</a></li>
+      
     
 
 

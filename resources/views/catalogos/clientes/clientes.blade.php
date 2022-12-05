@@ -52,8 +52,3 @@
 </div>
 
 @endsection
-<script>
- $(document).ready( function () {
-    $('#Clientes').DataTable();
-} ); 
-</script>

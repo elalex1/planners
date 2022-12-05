@@ -51,6 +51,7 @@ use App\Http\Controllers\Catalogos\FrecuenciasNominasController;
 use App\Http\Controllers\Catalogos\DepartamentosController;
 use App\Http\Controllers\Catalogos\PuestosController;
 use App\Http\Controllers\Catalogos\ArticulosController;
+use App\Http\Controllers\Catalogos\ProveedoresController;
 /*######################################################################################################*/
 
 /****                                  CLEAR CACHE                                                   ****/
@@ -654,3 +655,8 @@ Route::post('importClientes', [ClientesController::class, 'ImportClientes'])->na
 //;
 //Auth::routes();
 
+//==========================================================//
+//                   Proveedores                            //
+//==========================================================//
+
+Route::get('/proveedores', [ProveedoresController::class, 'index'])->name('proveedores');
