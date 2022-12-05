@@ -4,9 +4,9 @@
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="icon" type="image/x-icon" href="{{ asset('faviico.ico') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 <link rel="stylesheet" href="{{asset('css/signup.css')}}">
 <link rel="stylesheet" href="{{ asset('css/default.css')}}">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 <link rel="stylesheet" href="css/login.css">
 
 <div class="container" id="container">

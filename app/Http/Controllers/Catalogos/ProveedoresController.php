@@ -29,22 +29,26 @@ class ProveedoresController extends Controller
         return view('catalogos.proveedores.proveedores',['proveedores' => $proveedores]);
     }
 
-   public function ExportClientes(){
-    $clientes = $this->clientes->GetClientes();
-    return (new FastExcel($clientes))->download('clientes.xlsx');
+   public function ExportProveedores(){
+    $proveedores = $this->proveedores->GetProveedores();
+    return (new FastExcel($proveedores))->download('Proveedores.xlsx');
    }
 
-   public function ImportClientes(Request $request){
-    $users = (new FastExcel)->import($request->clientes, function ($line) {
-        return Clientes::create([
+   public function ImportProveedores(Request $request){
+    $proveedores = (new FastExcel)->import($request->clientes, function ($line) {
+        return ProveedoresModel::create([
             'nombre' => $line['nombre'],
-            'correo' => $line['correo'],
-            'contacto' => $line['contacto'],
-            'clave' => $line['clave'],
+            'rfc' => $line['rfc'],
+            'tipo_proveedor' => $line['tipo_proveedor'],
             'estatus' => $line['estatus'],
-            'clave_cliente' => $line['clave_cliente']
+            'cuenta_pagar' => $line['cuenta_pagar'],
+            'cuenta_anticipo' => $line['cuenta_anticipo'],
+            'extrangero' => $line['extrangero'],
+            'condicion_pago_id' => $line['condicion_pago_id']
         ]);
     });
     return redirect()->back();
    }
+
+   
 }

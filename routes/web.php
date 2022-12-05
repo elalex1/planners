@@ -660,3 +660,5 @@ Route::post('importClientes', [ClientesController::class, 'ImportClientes'])->na
 //==========================================================//
 
 Route::get('/proveedores', [ProveedoresController::class, 'index'])->name('proveedores');
+Route::post('/ImportProveedores', [ProveedoresController::class, 'ImportProveedores'])->name('ImportProveedores');
+Route::get('ExportProveedores', [ProveedoresController::class, 'ExportProveedores'])->name('ExportProveedores');

@@ -34,15 +34,15 @@
 {{--IMPORT Y EXPORT EXCEL--}}
 <div class="card">
   <div class="card-content">
-      <form action=" {{route('ImportClientes')}} " method="post" enctype="multipart/form-data">
+      <form action=" {{route('ImportProveedores')}} " method="post" enctype="multipart/form-data">
           @csrf
-          <input type="file" name="articulos" id="articulos" class="dropify">
+          <input type="file" name="proveedores" id="proveedores" class="dropify">
      
       <div class="row center-align">
         <div class="row"></div>  
         <div class="col s12">
               <button class="waves-effect waves-light btn" type="submit">Importar</button>
-              <a class="waves-effect waves-light btn" href=" {{route('ExportClientes')}} ">Exportar</a> 
+              <a class="waves-effect waves-black btn" href=" {{route('ExportProveedores')}} ">Exportar</a> 
         </div>
       </div>
     </form>
