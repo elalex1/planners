@@ -3,36 +3,34 @@
 @section('content')
 
 {{--Tabla clientes--}}
-<div class="row">
-    <div class="col s12 m12">
-      <div class="card White">
-        <div class="card-content">
-          <span class="card-title center-align">Clientes</span>
-          
-          <table id="myTable" name="myTable" class="display" style="width:100%">
-            <thead>
+<div class="card">
+  <div class="card-content">
+      <table id="tableGeneral" class="display responsive" width="100%">
+          <thead>
               <tr>
-                  <th>Nombre</th>
-                  <th>Correo</th>
-                  <th>Contacto</th>
+                  <th data-priority="1">NOMBRE</th>
+                  <th data-priority="2">CORREO</th>
+                  <th data-priority="3">CONTACTO</th>
+                  <th data-priority="5">CLAVE</th>
+                  <th data-priority="6">ESTATUS</th>
+                  <th data-priority="4"></th>
               </tr>
-            </thead>
-    
-            <tbody>
+          </thead>
+          <tbody>
               @foreach ($clientes as $cliente)
-                <tr>
+              <tr id-record="{{$cliente->cliente_id}}" modal-record="modalInfo">
                   <td>{{$cliente->nombre}}</td>
                   <td>{{$cliente->correo}}</td>
                   <td>{{$cliente->contacto}}</td>
-                </tr>
-                <tr>  
+                  <td>{{$cliente->clave}}</td>
+                  <td>{{$cliente->estatus}}</td>
+                  <td></td>
+              </tr>
               @endforeach
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
+          </tbody>
+      </table>
   </div>
+</div>
 {{--IMPORT Y EXPORT EXCEL--}}
   <div class="card">
     <div class="card-content">
