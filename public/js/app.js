@@ -151,8 +151,8 @@ $(window).on('load', function() {
   
     $('.dropify').dropify({
       messages: {
-        'default': 'Arrastra y suelta la imagen o clic aquí para subirla',
-        'replace': 'Arrastra y suelta la imagen o clic aquí para reemplazarla',
+        'default': 'Arrastra y suelta el archivo o clic aquí para subirlo',
+        'replace': 'Arrastra y suelta el archivo o clic aquí para reemplazarlo',
         'remove':  'Eliminar',
       },
   
