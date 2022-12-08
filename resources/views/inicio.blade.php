@@ -12,9 +12,6 @@
     </div>
   </div>
 
-
-
-
 {{--Dashboard--}}
 
 
@@ -22,12 +19,10 @@
     <div class="card white">
       <div class="card-content">
         <span class="card-title">Proyectos</span>
-        <p>I am a very simple card. I am good at containing small bits of information.
-        I am convenient because I require little markup to use effectively.</p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nesciunt similique, ullam optio vel pariatur molestiae porro alias quia tempora a vitae eius vero. Ullam quibusdam vel consectetur itaque laudantium!
-      </div>
-      <div class="card-action">
-      </div>
+        <p>puedo poner aqui lo de cotizaciones o no se xd.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quidem sit numquam ab iste quos. Minus rerum temporibus blanditiis numquam et, architecto error! Sunt, culpa ipsam quae quo dolore minima!</p>      
+</div>
+      
     </div>
   </div>
 
@@ -37,8 +32,7 @@
         <span class="card-title">Facturas</span>
         <p>I am a very simple card.</p>
       </div>
-      <div class="card-action">
-      </div>
+      
     </div>
   </div>
 
@@ -48,8 +42,7 @@
         <span class="card-title">Tareas</span>
         <p>I am a very simple card.</p>
       </div>
-      <div class="card-action">
-      </div>
+     
     </div>
   </div>
 
@@ -59,8 +52,7 @@
         <span class="card-title">Calendario</span>
         <p>I am a very simple card.</p>
       </div>
-      <div class="card-action">
-      </div>
+      
     </div>
   </div>
 
@@ -70,8 +62,7 @@
         <span class="card-title">Reportes</span>
         <p>I am a very simple card.</p>
       </div>
-      <div class="card-action">
-      </div>
+      
     </div>
   </div>
 

@@ -1493,6 +1493,8 @@ $(document).on( 'preInit.dt.dtr', function (e, settings, json) {
 	}
 } );
 
+	
+$.fn.dataTable.ext.errMode = 'throw';
 
 return Responsive;
 }));
