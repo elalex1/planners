@@ -23,7 +23,11 @@
                   <td>{{$proveedor->cuenta_pagar}}</td>
                   <td>{{$proveedor->cuenta_anticipo}}</td>
                   <td>{{$proveedor->extrangero}}</td>
-                  <td></td>
+                  <td>
+                    <i href="" class="planner-text  material-icons tooltipped puntero editar-documento" data-delay="50" data-tooltip="Editar Proveedor">edit</i>
+
+                    <i href="" class="grey-text material-icons tooltipped" data-delay="50" data-tooltip="Eliminar Proveedor">delete_forever</i>
+                  </td>
               </tr>
               @endforeach
           </tbody>

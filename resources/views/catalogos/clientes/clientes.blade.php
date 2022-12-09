@@ -24,7 +24,11 @@
                   <td>{{$cliente->contacto}}</td>
                   <td>{{$cliente->clave}}</td>
                   <td>{{$cliente->estatus}}</td>
-                  <td></td>
+                  <td>
+                    <i href="" class="planner-text  material-icons tooltipped puntero editar-documento" data-delay="50" data-tooltip="Editar Cliente">edit</i>
+
+                    <i href="" class="grey-text material-icons tooltipped" data-delay="50" data-tooltip="Eliminar Cliente">delete_forever</i>
+                  </td>
               </tr>
               @endforeach
           </tbody>
