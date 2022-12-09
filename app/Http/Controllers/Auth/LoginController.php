@@ -74,8 +74,6 @@ class LoginController extends Controller
 
     $passwordEncrypted = $this->encryptValue($password);
 
-    //return $passwordEncrypted;
-
     $checkLogin = $this->LoginModel->getLogin($email, $passwordEncrypted);
 
     //return $checkLogin;
